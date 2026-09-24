@@ -1,5 +1,5 @@
 # BÀI TẬP PHÁT TRIỂN WEB KINH DOANH NÂNG CAO - ANGULAR
-
+- **Tên**: Đặng Trương Anh Tài 
 - **Lớp**: K24406H
 - **Môn học**: Phát triển Web Kinh doanh Nâng cao
 - **Giảng viên**: TS. Trần Duy Thanh
