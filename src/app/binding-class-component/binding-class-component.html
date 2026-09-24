@@ -1,0 +1,10 @@
+<h2>Binding Class Component works!</h2>
+<button class="btn"
+        [class.btn-saved]="isSaved"
+        (click)="toggleSaveState()">
+  {{ isSaved ? 'Saved' : 'Re-Save' }}
+</button>
+<button [class]="{'btn': true, 'btn-active': isActive, 'btn-saved': isSaved}"
+        (click)="toggleSaveState()">
+  Re-Save
+</button>

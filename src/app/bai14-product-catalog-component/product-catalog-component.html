@@ -1,0 +1,27 @@
+<h3>Bài 14: Json Array Model – Product - Catalog</h3>
+
+<div *ngFor="let cate of categories" style="margin-bottom: 30px;">
+  <div style="background-color: #2196F3; color: white; padding: 10px; font-weight: bold; border-radius: 4px 4px 0 0;">
+    Danh mục: {{ cate.CateName }} (Mã: {{ cate.Cateid }})
+  </div>
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+    <thead>
+      <tr style="background-color: #f2f2f2;">
+        <th>Ma San Pham</th>
+        <th>Ten San Pham</th>
+        <th>Gia San Pham</th>
+        <th>Picture</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of cate.Products">
+        <td>{{ p.ProductId }}</td>
+        <td>{{ p.ProductName }}</td>
+        <td>{{ p.Price }}</td>
+        <td>
+          <img [src]="p.Image" alt="{{ p.ProductName }}" width="80" height="80" style="object-fit: contain;" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

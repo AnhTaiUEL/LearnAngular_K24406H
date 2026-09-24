@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Laptop Dell XPS", "price": 1200, "image": "https://picsum.photos/id/0/100/100" },
+  { "id": 2, "name": "iPhone 15 Pro", "price": 999, "image": "https://picsum.photos/id/1/100/100" },
+  { "id": 3, "name": "iPad Air M2", "price": 599, "image": "https://picsum.photos/id/2/100/100" },
+  { "id": 4, "name": "Apple Watch Ultra", "price": 799, "image": "https://picsum.photos/id/3/100/100" },
+  { "id": 5, "name": "Sony WH-1000XM5", "price": 349, "image": "https://picsum.photos/id/4/100/100" }
+]

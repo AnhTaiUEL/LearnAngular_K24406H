@@ -1,0 +1,16 @@
+<h2>Binding Property Component works!</h2>
+<table border="1">
+    <tr>
+        <td>Name:</td>
+        <td>
+            <input type="text" [value]="name" [disabled]="isDisabled">
+        </td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>
+            <input type="text" [value]="{email}" disabled={{isDisabled}}> 
+        </td>
+    </tr>
+</table>
+{{hello}}

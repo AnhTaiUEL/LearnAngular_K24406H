@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  clear: both;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+td {
+  padding: 8px 12px;
+}

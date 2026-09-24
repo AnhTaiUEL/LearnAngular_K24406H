@@ -1,0 +1,20 @@
+<h2>Giải Phương Trình Bậc 1 (ax + b = 0)</h2>
+<table border="1">
+  <tr>
+    <td>Hệ số a:</td>
+    <td><input type="text" #hsa placeholder="Nhập a" /></td>
+  </tr>
+  <tr>
+    <td>Hệ số b:</td>
+    <td><input type="text" #hsb placeholder="Nhập b" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <button (click)="giaiPto1(hsa.value, hsb.value)">Giải PT</button>
+    </td>
+  </tr>
+  <tr>
+    <td>Kết quả:</td>
+    <td [innerHTML]="result"></td>
+  </tr>
+</table>

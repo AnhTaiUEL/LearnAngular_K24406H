@@ -1,0 +1,35 @@
+<div *ngIf="errorMessage" style="color: red; margin-bottom: 10px;">
+  {{ errorMessage }}
+</div>
+
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; border: 1px solid #777;">
+  <thead>
+    <tr style="background-color: #f2f2f2; font-weight: bold;">
+      <th style="width: 80px; text-align: center;">Id</th>
+      <th style="width: 120px; text-align: left;">Name</th>
+      <th style="width: 200px; text-align: left;">Email</th>
+      <th style="width: 60px; text-align: center;">Age</th>
+      <th style="width: 160px; text-align: center;">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let group of customerGroups">
+      <!-- Group Header Row -->
+      <tr style="background-color: #FAFAFA;">
+        <td colspan="5" style="font-weight: normal; padding: 6px 10px; border: 1px solid #ccc; font-size: 14px;">
+          {{ group.CustomerTypeId }} - {{ group.CustomterTypeName }}
+        </td>
+      </tr>
+      <!-- Customer Item Rows -->
+      <tr *ngFor="let c of group.Customers">
+        <td align="center" style="vertical-align: middle;">{{ c.Id }}</td>
+        <td style="vertical-align: middle;">{{ c.Name }}</td>
+        <td style="vertical-align: middle;">{{ c.Email }}</td>
+        <td align="center" style="vertical-align: middle;">{{ c.Age }}</td>
+        <td align="center" style="vertical-align: middle; padding: 5px;">
+          <img [src]="c.Image" [alt]="c.Name" style="width: 140px; height: 120px; object-fit: cover; display: block; margin: auto;" />
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
